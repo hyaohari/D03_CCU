@@ -60,7 +60,7 @@ def index():
             decision = "No"
         else:
                 decision = "Yes"
-        s5 = "The predicted credit card upgrade decision based on G is " + decision
+        s5 = "The predicted credit card upgrade decision based on Gradient Boosting is " + decision
         return(render_template("index.html", result1=s1, result2=s2, result3=s3, result4=s4, result5=s5))
     else:
         return(render_template("index.html", result1="2", result2="2", result3="2", result4="2", result5="2"))
